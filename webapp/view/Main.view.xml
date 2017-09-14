@@ -34,7 +34,7 @@
 					</content>
 					<footer>
 						<Toolbar>
-							<Button text="Copy" type="Emphasized" />
+							<Button id="idCopyButton" enabled="false" text="Copy" type="Emphasized" press="onCopyPress"/>
 							<ToolbarSpacer/>
 							<Button text="Submit" press="onSubmitPress" type="Accept" />
 							<Button text="Cancel" />
