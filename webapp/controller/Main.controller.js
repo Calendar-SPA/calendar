@@ -4,6 +4,9 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("AGLCalendar.controller.Main", {
-
+	onInit: function(){
+		 	
+		 	
+		 }
 	});
 });
