@@ -17,7 +17,7 @@
         "type": "service",
         "name": "sapui5",
         "entryPath": "/test-resources",
-        "version": "1.38.26"
+        "version": "1.44.22"
       },
       "description": "SAPUI5 Test Resources"
     }
