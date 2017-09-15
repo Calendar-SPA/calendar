@@ -29,7 +29,7 @@
 								</Text>
 								</form:content>
 							</form:SimpleForm>
-							<u:Calendar id="calendar" width="100%" select="handleCalendarSelect"/>
+							<u:Calendar id="calendar" width="100%" select="handleCalendarSelect" intervalSelection="true"/>
 						</VBox>
 					</content>
 					<footer>

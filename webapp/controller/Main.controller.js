@@ -7,7 +7,7 @@ sap.ui.define([
 	onInit: function(){
 		this.bCopyMode = false;
 		this.oCalendarData = [];
-		this.copiedDate = new Date();
+		this.aCopiedDate = new Date();
 		var aProjectData = [
 			{
 				"ProjectId": "001",
@@ -33,20 +33,35 @@ sap.ui.define([
 		 },
 		 
 		 handleCalendarSelect: function() {
-		 	var i;
+		 	var i = 0;
 		 	var bDateSpecial = false;
+		 	var oCopyButton = this.byId("idCopyButton");
+		 	var oCalendar = this.byId("calendar");
+		 	var aSpecailDates = oCalendar.getSpecialDates();
+		 	var aSelectedDates = oCalendar.getSelectedDates();
+		 	var oSelectedStartDate = aSelectedDates[0].getStartDate();
+		 	var oSelectedEndDate = aSelectedDates[0].getEndDate();
 		 	if (this.bCopyMode) {
-		 		this.byId("idCopyButton").setEnabled(true);
-		 	} else if (this.byId("calendar").getSelectedDates().length) {
-			 	for (i = 0; i < this.byId("calendar").getSpecialDates().length; i++) {
-			 		if (this.byId("calendar").getSpecialDates()[i].getStartDate() - this.byId("calendar").getSelectedDates()[0].getStartDate() === 0) {
+		 		oCopyButton.setEnabled(true);
+		 	} else if (aSelectedDates.length) {
+			 	for (var l = aSpecailDates.length; i < l; i++) {
+			 		var oSpecailStartDate = aSpecailDates[i].getStartDate();
+			 		var oSpecailEndDate = aSpecailDates[i].getEndDate();
+			 		
+			 		if(oSpecailEndDate === null){
+			 			if(oSelectedEndDate === null && oSpecailStartDate - oSelectedStartDate === 0){
+			 				bDateSpecial = true; // The selected date is already marked.
+			 			}
+			 		}else if(oSelectedEndDate === null && oSelectedStartDate >= oSpecailStartDate && oSelectedStartDate <= oSpecailEndDate){
+			 			bDateSpecial = true; // The selected date is already marked.
+			 		}else if(oSelectedEndDate !== null && oSelectedStartDate >= oSpecailStartDate && oSelectedEndDate <= oSpecailEndDate){
 			 			bDateSpecial = true; // The selected date is already marked.
 			 		}
 			 	}
 			 	if (bDateSpecial) {
-			 		this.byId("idCopyButton").setEnabled(true);
+			 		oCopyButton.setEnabled(true);
 			 	} else {
-			 		this.byId("idCopyButton").setEnabled(false);
+			 		oCopyButton.setEnabled(false);
 			 	}
 		 	}
 		 },
@@ -54,60 +69,95 @@ sap.ui.define([
 		 onCopyPress: function() {
 		 	sap.m.MessageToast.show("Copied");
 		 	this.bCopyMode = true;
-		 	this.copiedDate = this.byId("calendar").getSelectedDates()[0].getStartDate();
+		 	this.aCopiedDate = this.byId("calendar").getSelectedDates();
 		 	this.byId("calendar").removeAllSelectedDates();
-		 	this.byId("calendar").setSingleSelection(false);
+		 	//this.byId("calendar").setSingleSelection(false);
 		 },
 		 
 		 onSubmitPress: function() {
-		 	if (!this.bCopyMode && !this.byId("idProjectSelect").getSelectedKey()) {
-		 		this.byId("idProjectSelect").setValueState("Error");
-		 		this.byId("idProjectSelect").setValueStateText("Mandatory Field");
-		 	} else if (!this.bCopyMode && !this.byId("idHoursSelect").getSelectedKey()) {
-		 		this.byId("idHoursSelect").setValueState("Error");
-		 		this.byId("idHoursSelect").setValueStateText("Mandatory Field");
+		 	var oProjectSelect = this.byId("idProjectSelect");
+		 	var oHoursSelect = this.byId("idHoursSelect");
+		 	var oCalendar = this.byId("calendar");
+		 	var aSelectedDates = oCalendar.getSelectedDates();
+		 	var oSelectedRange = aSelectedDates[0];
+			var oSelectedRangeStart = oSelectedRange.getStartDate();
+			var oSelectedRangeEnd = oSelectedRange.getEndDate();
+		 	if (!this.bCopyMode && !oProjectSelect.getSelectedKey()) {
+		 		oProjectSelect.setValueState("Error");
+		 		oProjectSelect.setValueStateText("Mandatory Field");
+		 	} else if (!this.bCopyMode && !oHoursSelect.getSelectedKey()) {
+		 		oHoursSelect.setValueState("Error");
+		 		oHoursSelect.setValueStateText("Mandatory Field");
 		 	} else {
-		 		this.byId("idProjectSelect").setValueState("None");
-		 		this.byId("idHoursSelect").setValueState("None");
+		 		oProjectSelect.setValueState("None");
+		 		oHoursSelect.setValueState("None");
 		 		
 		 		var aPostData = [];
-		 		var i, k;
-		 		for (i = 0; i < this.byId("calendar").getSelectedDates().length; i++) {
-			 		this.byId("calendar").addSpecialDate(new sap.ui.unified.DateTypeRange({
-						startDate: this.byId("calendar").getSelectedDates()[i].getStartDate(), 
-						endDate: this.byId("calendar").getSelectedDates()[i].getStartDate(),
+		 		var i, l =  oSelectedRangeEnd === null ? 0 : Math.abs(oSelectedRangeStart.getDate() - oSelectedRangeEnd.getDate());
+		 		
+		 		if(this.bCopyMode){
+		 			//console.log(this.aCopiedDate);
+		 			var oCopiedRange = this.aCopiedDate[0];
+			 		var oCopiedRangeStart = oCopiedRange.getStartDate();
+			 		var oCopiedRangeEnd = oCopiedRange.getEndDate();
+			 		var n =  oCopiedRangeEnd === null ? 0 : Math.abs(oCopiedRangeStart.getDate() - oCopiedRangeEnd.getDate());
+			 		n = n < l ? n : l;
+			 		var endDate = new Date(oSelectedRangeStart.valueOf());
+			 		if(n === 0){
+			 			endDate = null;
+			 		}else{
+			 			endDate.setDate(endDate.getDate() + n);
+			 		}
+		 			oCalendar.addSpecialDate(new sap.ui.unified.DateTypeRange({
+						startDate: oSelectedRangeStart, 
+						endDate: endDate,
 						type: sap.ui.unified.CalendarDayType.Type08
 					}));
-					
-					// Build data structure to submit/post
-					var oPostData;
-					if (!this.bCopyMode) {
+		 			//oCalendar.addSpecialDate(this.aCopiedDate);
+		 		}else{
+		 			oCalendar.addSpecialDate(new sap.ui.unified.DateTypeRange({
+							startDate: oSelectedRangeStart, 
+							endDate: oSelectedRangeEnd,
+							type: sap.ui.unified.CalendarDayType.Type08
+						}));
+						
+						// Build data structure to submit/post
+						
+						var oPostData;
 						oPostData = {
-							"Date": this.byId("calendar").getSelectedDates()[i].getStartDate(),
-							"ProjectId": this.byId("idProjectSelect").getSelectedKey(),
-							"Hours":this.byId("idHoursSelect").getSelectedKey()
+							"Date": aSelectedDates[i],
+							"ProjectId": oProjectSelect.getSelectedKey(),
+							"Hours":oHoursSelect.getSelectedKey()
 						};
 						aPostData.push(oPostData);
-					} else {
-						for (k = 0; k < this.oCalendarData.length; k++) {
-							if (this.oCalendarData[k].Date - this.byId("calendar").getSelectedDates()[i].getStartDate() === 0) {
-								oPostData = {
-									"Date": this.byId("calendar").getSelectedDates()[i].getStartDate(),
-									"ProjectId": this.oCalendarData[k].ProjectId,
-									"Hours": this.oCalendarData[k].Hours
-								};
-							}
-						}
-					}
+						// if (!this.bCopyMode) {
+						// 	oPostData = {
+						// 		"Date": aSelectedDates[i],
+						// 		"ProjectId": oProjectSelect.getSelectedKey(),
+						// 		"Hours":oHoursSelect.getSelectedKey()
+						// 	};
+						// 	aPostData.push(oPostData);
+						// } else {
+						// 	for (k = 0; k < this.oCalendarData.length; k++) {
+						// 		if (this.oCalendarData[k].Date - aSelectedDates[i].getStartDate() === 0) {
+						// 			oPostData = {
+						// 				"Date": aSelectedDates[i].getStartDate(),
+						// 				"ProjectId": this.oCalendarData[k].ProjectId,
+						// 				"Hours": this.oCalendarData[k].Hours
+						// 			};
+						// 		}
+						// 	}
+						// }
 		 		}
+		 		
 		 		
 				this.oCalendarData = this.oCalendarData.concat(aPostData);
 		 		
 		 		sap.m.MessageToast.show("Successfully Submitted!");
-		 		this.byId("calendar").removeAllSelectedDates();
+		 		oCalendar.removeAllSelectedDates();
 		 		this.bCopyMode = false;
 			 	this.byId("idCopyButton").setEnabled(false);
-		 		this.byId("calendar").setSingleSelection(true);
+		 		oCalendar.setSingleSelection(true);
 		 	}
 		 }
 	});
