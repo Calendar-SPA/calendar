@@ -101,13 +101,15 @@ sap.ui.define([
 			 		var oCopiedRangeStart = oCopiedRange.getStartDate();
 			 		var oCopiedRangeEnd = oCopiedRange.getEndDate();
 			 		var n =  oCopiedRangeEnd === null ? 0 : Math.abs(oCopiedRangeStart.getDate() - oCopiedRangeEnd.getDate());
-			 		n = n < l ? n : l;
+			 		
 			 		var endDate = new Date(oSelectedRangeStart.valueOf());
 			 		if(n === 0){
-			 			endDate = null;
+			 			endDate.setDate(endDate.getDate() + l);
 			 		}else{
+			 			n = n < l ? n : l;
 			 			endDate.setDate(endDate.getDate() + n);
 			 		}
+
 		 			oCalendar.addSpecialDate(new sap.ui.unified.DateTypeRange({
 						startDate: oSelectedRangeStart, 
 						endDate: endDate,
