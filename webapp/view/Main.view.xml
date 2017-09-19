@@ -8,21 +8,20 @@
 						<form:SimpleForm editable="true" layout="ResponsiveGridLayout">
 							<form:content>
 								<Label text="Select your project"/>
-								<ComboBox id="idProjectSelect"  items="{ path: 'DropdownModel>/ProjectCollection' }">
+								<ComboBox id="idProjectSelect" placeholder="Development Work" selectedKey="{DropdownModel>/selectedProjectId}" selectionChange="onProjectChange" items="{ path: 'DropdownModel>/ProjectCollection' }">
 									<core:Item key="{DropdownModel>ProjectId}" text="{DropdownModel>Name}"/>
 									<layoutData>
 										<l:GridData span="XL4 L4 M12 S12"/>
 									</layoutData>
 								</ComboBox>
 								<Label text="Hours completed"/>
-								<ComboBox id="idHoursSelect" items="{ path: 'DropdownModel>/Hours' }">
-									<core:Item key="{DropdownModel>Key}" text="{DropdownModel>Value}"/>
+								<Input id="idHoursInput" value="">
 									<layoutData>
 										<l:GridData span="XL4 L4 M12 S12"/>
 									</layoutData>
-								</ComboBox>
+								</Input>
 								<Label text="Hours remaining"/>
-								<Text text="80">
+								<Text id="idProjectHoursRemain" text="{ parts:['DropdownModel>/ProjectCollection','DropdownModel>/selectedProjectId'],formatter:'.hoursRemainsFormatter' }">
 									<layoutData>
 										<l:GridData span="XL4 L4 M12 S12"/>
 									</layoutData>
@@ -36,7 +35,7 @@
 						<Toolbar>
 							<Button id="idCopyButton" enabled="false" text="Copy" type="Emphasized" press="onCopyPress"/>
 							<ToolbarSpacer/>
-							<Button text="Submit" press="onSubmitPress" type="Accept" />
+							<Button id="idSubmitButton" text="Submit" press="onSubmitPress" type="Accept" />
 							<Button text="Cancel" />
 						</Toolbar>
 					</footer>
