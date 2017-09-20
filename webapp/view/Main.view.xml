@@ -15,7 +15,7 @@
 									</layoutData>
 								</ComboBox>
 								<Label text="Hours completed"/>
-								<Input id="idHoursInput" value="">
+								<Input id="idHoursInput" value="7.5">
 									<layoutData>
 										<l:GridData span="XL4 L4 M12 S12"/>
 									</layoutData>

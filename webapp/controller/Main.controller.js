@@ -27,7 +27,7 @@ sap.ui.define([
 				"Name": "POC",
 				"Hours": 35
 			}, {
-				"ProjectId": "004",
+				"ProjectId": "005",
 				"Name": "BEES",
 				"Hours": 10
 			}];
@@ -56,7 +56,7 @@ sap.ui.define([
 						oEntity[aEntitiesFields[i].FieldName] = aEntitiesFields[i].FieldValue;
 					}
 				}
-				//console.log(oEntites);
+				console.log(oEntites);
 				for(var sDate in oEntites){
 					oCalendar.addSpecialDate(new sap.ui.unified.DateTypeRange({
 						startDate: utils.YYYYMMDDtoDate(sDate),
@@ -111,6 +111,7 @@ sap.ui.define([
 			var i = 0;
 			var bDateSpecial = false;
 			var oCopyButton = this.byId("idCopyButton");
+			var oHoursInput = this.byId("idHoursInput");
 			var oCalendar = this.byId("calendar");
 			var aSpecailDates = oCalendar.getSpecialDates();
 			var aSelectedDates = oCalendar.getSelectedDates();
@@ -118,6 +119,17 @@ sap.ui.define([
 			var oSelectedEndDate = aSelectedDates[0].getEndDate();
 			var aSpecailDatesAll = [];
 			var aSelectedDatesAll = [];
+			
+			//display project info for selected date, if it's a range, then display the start date of the range.
+			var oEntitiesModel = this.getView().getModel("EntitiesModel");
+			var DropdownModel = this.getView().getModel('DropdownModel');
+			var sFormattedStartDate = utils.dateFormatYYYYMMDD(oSelectedStartDate);
+			var oSelectedEntity = oEntitiesModel.getProperty("/" + sFormattedStartDate);
+			
+			if(oSelectedEntity){
+				DropdownModel.setProperty("/selectedProjectId", oSelectedEntity.NOTES);
+				oHoursInput.setValue(oSelectedEntity.TIME);
+			}
 			
 			if(oSelectedEndDate === null){
 				aSelectedDatesAll.push(oSelectedStartDate.valueOf());
@@ -187,6 +199,11 @@ sap.ui.define([
 			var oSelectedRange = aSelectedDates[0];
 			var oSelectedRangeStart = oSelectedRange.getStartDate();
 			var oSelectedRangeEnd = oSelectedRange.getEndDate();
+			var DropdownModel = this.getView().getModel('DropdownModel');
+			var oEntitiesModel = this.getView().getModel("EntitiesModel");
+			
+			var sProjectItemPath,oContext,oProjectItemObject,nProjectHours,bValidHours;
+			
 			if (!this.bCopyMode && !oProjectSelect.getSelectedKey()) {
 				oProjectSelect.setValueState("Error");
 				oProjectSelect.setValueStateText("Mandatory Field");
@@ -196,7 +213,7 @@ sap.ui.define([
 			} else {
 				oProjectSelect.setValueState("None");
 				oHoursInput.setValueState("None");
-				var oEntitiesModel = this.getView().getModel("EntitiesModel");
+				
 				var l = oSelectedRangeEnd === null ? 0 : Math.abs(oSelectedRangeStart.getDate() - oSelectedRangeEnd.getDate());
 				var endDate;
 				var totalHours = 0;
@@ -218,15 +235,42 @@ sap.ui.define([
 					var days = nDiff / 1000 / 60 / 60 / 24;
 					var sourceDate = new Date(oCopiedRangeStart);
 					var tarDate = new Date(oSelectedRangeStart);
-					
+					//calculate hours remains
+					var oUpdatedProjectHours = {};
+					var oRecordedDates = {};
 					for(var k = 0; k < days + 1; k++){
 						tarDate.setDate(oSelectedRangeStart.getDate() + k);
 						sourceDate.setDate(oCopiedRangeStart.getDate() + k);
 						var nSourceHours = oEntitiesModel.getProperty("/" + utils.dateFormatYYYYMMDD(sourceDate) + "/TIME");
-						totalHours += parseFloat(nSourceHours);
-						oEntitiesModel.setProperty("/" + utils.dateFormatYYYYMMDD(tarDate) + "/TIME",
-							nSourceHours
-						);
+						var sProjectId = oEntitiesModel.getProperty("/" + utils.dateFormatYYYYMMDD(sourceDate) + "/NOTES");
+						var oProjectItem = oProjectSelect.getItemByKey(sProjectId);
+						oContext = oProjectItem.getBindingContext("DropdownModel");
+						sProjectItemPath = oContext.getPath();
+						var nProjectIndex = parseInt(sProjectItemPath.split("/")[2], 10);
+						oProjectItemObject = oContext.getObject();
+						nProjectHours = oProjectItemObject.Hours;
+						var updatedHours = nProjectHours - nSourceHours;
+						if(updatedHours < 0){
+							bValidHours = false;
+							break;
+						}else{
+							oUpdatedProjectHours[nProjectIndex] = updatedHours;
+							oRecordedDates[utils.dateFormatYYYYMMDD(tarDate)] = {
+								TIME: nSourceHours,
+								NOTES: sProjectId
+							};
+						}
+						
+						bValidHours = true;
+						
+					}
+					if(bValidHours){
+						for(var idx in oUpdatedProjectHours){
+							DropdownModel.setProperty("/ProjectCollection/"+ idx + "/Hours", oUpdatedProjectHours[idx]);
+						}
+						for(var date in oRecordedDates){
+							oEntitiesModel.setProperty("/" + date, oRecordedDates[date]);
+						}
 					}
 					
 				} else {
@@ -247,23 +291,22 @@ sap.ui.define([
 						totalHours = nHours * (days + 1);
 						
 					}
+					oContext = this.getView().byId("idProjectSelect").getSelectedItem().getBindingContext("DropdownModel");
+					sProjectItemPath = oContext.getPath();
+					oProjectItemObject = oContext.getObject();
+					nProjectHours = oProjectItemObject.Hours;
+					sProjectId = oProjectItemObject.ProjectId;
+					//calculate hours remains
+					if(nProjectHours - totalHours < 0){
+						bValidHours = false;
+						sap.m.MessageToast.show("The hours remaining of selected project is insufficient!");
+					}else{
+						bValidHours = true;
+						DropdownModel.setProperty(sProjectItemPath + "/Hours", nProjectHours - totalHours);
+					}
 				}
 				
-				
-				//calculate hours remains
-				
-				
-				var DropdownModel = this.getView().getModel('DropdownModel');
-				
-				var oContext = this.getView().byId("idProjectSelect").getSelectedItem().getBindingContext("DropdownModel");
-				var sProjectItemPath = oContext.getPath();
-				var oProjectItemObject = oContext.getObject();
-				var nProjectHours = oProjectItemObject.Hours;
-				var sProjectId = oProjectItemObject.ProjectId;
-				
-				if(nProjectHours - totalHours < 0){
-					sap.m.MessageToast.show("The hours remaining of selected project is insufficient!");
-				}else{
+				if(bValidHours){
 					//this.saveEntities();
 					//set marked days(specail days on calendar)
 					oCalendar.addSpecialDate(new sap.ui.unified.DateTypeRange({
@@ -271,9 +314,10 @@ sap.ui.define([
 						endDate: endDate,
 						type: this.sMarkedType
 					}));
-					DropdownModel.setProperty(sProjectItemPath + "/Hours", nProjectHours - totalHours);
 					DropdownModel.refresh(true);
 					sap.m.MessageToast.show("Successfully Submitted!");
+				}else{
+					sap.m.MessageToast.show("The hours remaining of selected project is insufficient!");
 				}
 				
 
