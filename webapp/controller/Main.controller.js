@@ -36,6 +36,9 @@ sap.ui.define([
 			var that = this;
 			oEntitiesModel.attachRequestCompleted(function(){
 				var oCalendar = that.byId("calendar");
+				// that.byId("legend1").addItem(new sap.ui.unified.CalendarLegendItem({
+				// 	text : "Placeholder "
+				// }));
 				var aEntitiesFields = oEntitiesModel.getProperty('/d/results');
 				var nEntitesFieldsNumber = aEntitiesFields.length;
 				oEntitiesModel.setSizeLimit(nEntitesFieldsNumber);
@@ -278,20 +281,34 @@ sap.ui.define([
 				} else {
 					endDate = oSelectedRangeEnd;
 					var nHours = this.getView().byId("idHoursInput").getValue();
-					
+					var sSelectedProjectId = oProjectSelect.getSelectedKey();
 					if(endDate === null){//single day
 						var sDate = utils.dateFormatYYYYMMDD(oSelectedRangeStart);
 						
 						totalHours = parseFloat(nHours);
-					
+						
+						
+						oEntitiesModel.setProperty("/" + sDate, {
+							TIME:totalHours,
+							NOTES:sSelectedProjectId
+						});
+						
 						
 					}else{//date range
 						
-						var nDiff = Math.abs(new Date(oSelectedRangeStart - endDate));
-						var days = nDiff / 1000 / 60 / 60 / 24;
+						nDiff = Math.abs(new Date(oSelectedRangeStart - endDate));
+						days = nDiff / 1000 / 60 / 60 / 24;
 						
 						totalHours = nHours * (days + 1);
-						
+						var tempDate = new Date(oSelectedRangeStart);
+						for(var i = 0; i < days + 1; i++){
+							tempDate.setDate(oSelectedRangeStart.getDate() + i);
+							sDate = utils.dateFormatYYYYMMDD(tempDate);
+							oEntitiesModel.setProperty("/" + sDate, {
+								TIME:nHours,
+								NOTES:sSelectedProjectId
+							});
+						}
 					}
 					oContext = this.getView().byId("idProjectSelect").getSelectedItem().getBindingContext("DropdownModel");
 					sProjectItemPath = oContext.getPath();
