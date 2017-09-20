@@ -214,21 +214,21 @@ sap.ui.define([
 				oProjectSelect.setValueState("None");
 				oHoursInput.setValueState("None");
 				
-				var l = oSelectedRangeEnd === null ? 0 : Math.abs(oSelectedRangeStart.getDate() - oSelectedRangeEnd.getDate());
+				var nSelectedDays = oSelectedRangeEnd === null ? 0 : Math.abs(oSelectedRangeStart.getDate() - oSelectedRangeEnd.getDate());
 				var endDate;
 				var totalHours = 0;
 				if (this.bCopyMode) {//Copying
 					var oCopiedRange = this.aCopiedDate[0];
 					var oCopiedRangeStart = oCopiedRange.getStartDate();
 					var oCopiedRangeEnd = oCopiedRange.getEndDate();
-					var n = oCopiedRangeEnd === null ? 0 : Math.abs(oCopiedRangeStart.getDate() - oCopiedRangeEnd.getDate());
-
+					var nSourceDays = oCopiedRangeEnd === null ? 0 : Math.abs(oCopiedRangeStart.getDate() - oCopiedRangeEnd.getDate());
+					var nTargetDays;
 					endDate = new Date(oSelectedRangeStart.valueOf());
-					if (n === 0) {//source is one day
-						endDate.setDate(endDate.getDate() + l);
+					if (nSourceDays === 0) {//source is one day
+						endDate.setDate(endDate.getDate() + nSelectedDays);
 					} else {//source is a range
-						n = n < l ? n : l;
-						endDate.setDate(endDate.getDate() + n);
+						nTargetDays = nSourceDays < nSelectedDays ? nSourceDays : nSelectedDays;
+						endDate.setDate(endDate.getDate() + nTargetDays);
 					}
 					
 					var nDiff = Math.abs(new Date(oSelectedRangeStart - endDate));
@@ -240,7 +240,9 @@ sap.ui.define([
 					var oRecordedDates = {};
 					for(var k = 0; k < days + 1; k++){
 						tarDate.setDate(oSelectedRangeStart.getDate() + k);
-						sourceDate.setDate(oCopiedRangeStart.getDate() + k);
+						if(nSourceDays > 0){
+							sourceDate.setDate(oCopiedRangeStart.getDate() + k);
+						}
 						var nSourceHours = oEntitiesModel.getProperty("/" + utils.dateFormatYYYYMMDD(sourceDate) + "/TIME");
 						var sProjectId = oEntitiesModel.getProperty("/" + utils.dateFormatYYYYMMDD(sourceDate) + "/NOTES");
 						var oProjectItem = oProjectSelect.getItemByKey(sProjectId);
