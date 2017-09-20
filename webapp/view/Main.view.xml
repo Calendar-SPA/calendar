@@ -7,28 +7,41 @@
 					<VBox>
 						<form:SimpleForm editable="true" layout="ResponsiveGridLayout">
 							<form:content>
-								<Label text="Select your project"/>
+								<Label text="Select your project">
+									<layoutData>
+										<l:GridData span="XL4 L4 M12 S12"/>
+									</layoutData>
+								</Label>
 								<ComboBox id="idProjectSelect" placeholder="Development Work" selectedKey="{DropdownModel>/selectedProjectId}" selectionChange="onProjectChange" items="{ path: 'DropdownModel>/ProjectCollection' }">
 									<core:Item key="{DropdownModel>ProjectId}" text="{DropdownModel>Name}"/>
 									<layoutData>
-										<l:GridData span="XL4 L4 M12 S12"/>
+										<l:GridData span="XL8 L8 M12 S12"/>
 									</layoutData>
 								</ComboBox>
-								<Label text="Hours completed"/>
-								<Input id="idHoursInput" value="7.5">
+								<Label text="Hours completed">
 									<layoutData>
 										<l:GridData span="XL4 L4 M12 S12"/>
 									</layoutData>
+								</Label>
+								<Input id="idHoursInput" value="7.5">
+									<layoutData>
+										<l:GridData span="XL8 L8 M12 S12"/>
+									</layoutData>
 								</Input>
-								<Label text="Hours remaining"/>
+								<Label text="Hours remaining">
+									<layoutData>
+										<l:GridData span="XL4 L4 M4 S4"/>
+									</layoutData>
+								</Label>
 								<Text id="idProjectHoursRemain" text="{ parts:['DropdownModel>/ProjectCollection','DropdownModel>/selectedProjectId'],formatter:'.hoursRemainsFormatter' }">
 									<layoutData>
-										<l:GridData span="XL4 L4 M12 S12"/>
+										<l:GridData span="XL8 L8 M4 S4"/>
 									</layoutData>
 								</Text>
 								</form:content>
 							</form:SimpleForm>
 							<u:Calendar id="calendar" width="100%" select="handleCalendarSelect" intervalSelection="true"/>
+							<!--<u:CalendarLegend id="legend1" />-->
 						</VBox>
 					</content>
 					<footer>
