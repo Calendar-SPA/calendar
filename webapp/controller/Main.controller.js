@@ -56,7 +56,7 @@ sap.ui.define([
 						oEntity[aEntitiesFields[i].FieldName] = aEntitiesFields[i].FieldValue;
 					}
 				}
-				console.log(oEntites);
+				//console.log(oEntites);
 				for(var sDate in oEntites){
 					oCalendar.addSpecialDate(new sap.ui.unified.DateTypeRange({
 						startDate: utils.YYYYMMDDtoDate(sDate),
