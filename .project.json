@@ -6,7 +6,8 @@
   "build": {
     "targetFolder": "dist",
     "sourceFolder": "webapp",
-    "buildRequired": true
+    "buildRequired": false,
+    "lastBuildDateTime": "Wed, 20 Sep 2017 06:26:52 GMT"
   },
   "generation": [
     {
@@ -38,5 +39,10 @@
     "notifyBeforePushLevel": "Error",
     "blockPush": false,
     "blockPushLevel": "Error"
+  },
+  "hcpdeploy": {
+    "account": "i326460trial",
+    "name": "calendar",
+    "lastVersionWeTriedToDeploy": "1.0.0"
   }
 }
