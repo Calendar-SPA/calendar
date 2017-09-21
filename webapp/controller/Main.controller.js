@@ -220,6 +220,7 @@ sap.ui.define([
 				var nSelectedDays = oSelectedRangeEnd === null ? 0 : Math.abs(oSelectedRangeStart.getDate() - oSelectedRangeEnd.getDate());
 				var endDate;
 				var totalHours = 0;
+				var oDatesRecords = {};
 				if (this.bCopyMode) {//Copying
 					var oCopiedRange = this.aCopiedDate[0];
 					var oCopiedRangeStart = oCopiedRange.getStartDate();
@@ -282,16 +283,20 @@ sap.ui.define([
 					endDate = oSelectedRangeEnd;
 					var nHours = this.getView().byId("idHoursInput").getValue();
 					var sSelectedProjectId = oProjectSelect.getSelectedKey();
+					
 					if(endDate === null){//single day
 						var sDate = utils.dateFormatYYYYMMDD(oSelectedRangeStart);
 						
 						totalHours = parseFloat(nHours);
 						
-						
-						oEntitiesModel.setProperty("/" + sDate, {
+						oDatesRecords[sDate] = {
 							TIME:totalHours,
 							NOTES:sSelectedProjectId
-						});
+						};
+						// oEntitiesModel.setProperty("/" + sDate, {
+						// 	TIME:totalHours,
+						// 	NOTES:sSelectedProjectId
+						// });
 						
 						
 					}else{//date range
@@ -304,10 +309,14 @@ sap.ui.define([
 						for(var i = 0; i < days + 1; i++){
 							tempDate.setDate(oSelectedRangeStart.getDate() + i);
 							sDate = utils.dateFormatYYYYMMDD(tempDate);
-							oEntitiesModel.setProperty("/" + sDate, {
+							oDatesRecords[sDate] = {
 								TIME:nHours,
 								NOTES:sSelectedProjectId
-							});
+							};
+							// oEntitiesModel.setProperty("/" + sDate, {
+							// 	TIME:nHours,
+							// 	NOTES:sSelectedProjectId
+							// });
 						}
 					}
 					oContext = this.getView().byId("idProjectSelect").getSelectedItem().getBindingContext("DropdownModel");
@@ -327,6 +336,18 @@ sap.ui.define([
 				
 				if(bValidHours){
 					//this.saveEntities();
+					
+					//save newly created date records
+					for (sDate in oDatesRecords){
+						if(oDatesRecords.hasOwnProperty(sDate)){
+							oEntitiesModel.setProperty("/" + sDate, {
+								TIME:oDatesRecords[sDate].TIME,
+								NOTES:oDatesRecords[sDate].NOTES
+							});
+						}
+						
+						
+					}
 					//set marked days(specail days on calendar)
 					oCalendar.addSpecialDate(new sap.ui.unified.DateTypeRange({
 						startDate: oSelectedRangeStart,
