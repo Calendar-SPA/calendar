@@ -1,0 +1,1086 @@
+{
+	"d": {
+		"results": [
+			{
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "WORKDATE",
+			"FieldText": "",
+			"FieldValue": "20170918",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "AWART",
+			"FieldText": "出勤/缺勤类型",
+			"FieldValue": "0800",
+			"FieldValueText": "出勤时数",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "TIME",
+			"FieldText": "",
+			"FieldValue": "7.5",
+			"FieldValueText": "小时",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "NOTES",
+			"FieldText": "",
+			"FieldValue": "001",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STARTTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "ENDTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "COUNTER",
+			"FieldText": "",
+			"FieldValue": "000000016628",
+			"FieldValueText": "000000016628",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "REASON",
+			"FieldText": "",
+			"FieldValue": "",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STATUS",
+			"FieldText": "",
+			"FieldValue": "MACTION",
+			"FieldValueText": "已发送供审批",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "WORKDATE",
+			"FieldText": "",
+			"FieldValue": "20170919",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "AWART",
+			"FieldText": "出勤/缺勤类型",
+			"FieldValue": "0800",
+			"FieldValueText": "出勤时数",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "TIME",
+			"FieldText": "",
+			"FieldValue": "7.5",
+			"FieldValueText": "小时",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "NOTES",
+			"FieldText": "",
+			"FieldValue": "003",
+			"FieldValueText": "Horas reunião",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STARTTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "ENDTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "COUNTER",
+			"FieldText": "",
+			"FieldValue": "000000016596",
+			"FieldValueText": "000000016596",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "REASON",
+			"FieldText": "",
+			"FieldValue": "",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STATUS",
+			"FieldText": "",
+			"FieldValue": "DONE",
+			"FieldValueText": "已批准",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "WORKDATE",
+			"FieldText": "",
+			"FieldValue": "20170920",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "AWART",
+			"FieldText": "出勤/缺勤类型",
+			"FieldValue": "0800",
+			"FieldValueText": "出勤时数",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "TIME",
+			"FieldText": "",
+			"FieldValue": "7.5",
+			"FieldValueText": "小时",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "NOTES",
+			"FieldText": "",
+			"FieldValue": "005",
+			"FieldValueText": "Narrrativa qualquer...",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STARTTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "ENDTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "COUNTER",
+			"FieldText": "",
+			"FieldValue": "000000016603",
+			"FieldValueText": "000000016603",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "REASON",
+			"FieldText": "",
+			"FieldValue": "",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STATUS",
+			"FieldText": "",
+			"FieldValue": "DONE",
+			"FieldValueText": "已批准",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "WORKDATE",
+			"FieldText": "",
+			"FieldValue": "20170921",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "AWART",
+			"FieldText": "出勤/缺勤类型",
+			"FieldValue": "0800",
+			"FieldValueText": "出勤时数",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "TIME",
+			"FieldText": "",
+			"FieldValue": "7.5",
+			"FieldValueText": "小时",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "NOTES",
+			"FieldText": "",
+			"FieldValue": "004",
+			"FieldValueText": "asd",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STARTTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "ENDTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "COUNTER",
+			"FieldText": "",
+			"FieldValue": "000000016618",
+			"FieldValueText": "000000016618",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "REASON",
+			"FieldText": "",
+			"FieldValue": "",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STATUS",
+			"FieldText": "",
+			"FieldValue": "DONE",
+			"FieldValueText": "已批准",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "WORKDATE",
+			"FieldText": "",
+			"FieldValue": "20170922",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "AWART",
+			"FieldText": "出勤/缺勤类型",
+			"FieldValue": "0800",
+			"FieldValueText": "出勤时数",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "TIME",
+			"FieldText": "",
+			"FieldValue": "7.5",
+			"FieldValueText": "小时",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "NOTES",
+			"FieldText": "",
+			"FieldValue": "001",
+			"FieldValueText": "asd",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STARTTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "ENDTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "COUNTER",
+			"FieldText": "",
+			"FieldValue": "000000016619",
+			"FieldValueText": "000000016619",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "REASON",
+			"FieldText": "",
+			"FieldValue": "",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STATUS",
+			"FieldText": "",
+			"FieldValue": "DONE",
+			"FieldValueText": "已批准",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "WORKDATE",
+			"FieldText": "",
+			"FieldValue": "20170925",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "AWART",
+			"FieldText": "出勤/缺勤类型",
+			"FieldValue": "0800",
+			"FieldValueText": "出勤时数",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "TIME",
+			"FieldText": "",
+			"FieldValue": "7.5",
+			"FieldValueText": "小时",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "NOTES",
+			"FieldText": "",
+			"FieldValue": "003",
+			"FieldValueText": "Test",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STARTTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "ENDTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "COUNTER",
+			"FieldText": "",
+			"FieldValue": "000000016634",
+			"FieldValueText": "000000016634",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "REASON",
+			"FieldText": "",
+			"FieldValue": "",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STATUS",
+			"FieldText": "",
+			"FieldValue": "MACTION",
+			"FieldValueText": "已发送供审批",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "WORKDATE",
+			"FieldText": "",
+			"FieldValue": "20170928",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "AWART",
+			"FieldText": "出勤/缺勤类型",
+			"FieldValue": "0800",
+			"FieldValueText": "出勤时数",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "TIME",
+			"FieldText": "",
+			"FieldValue": "7.5",
+			"FieldValueText": "小时",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "NOTES",
+			"FieldText": "",
+			"FieldValue": "004",
+			"FieldValueText": "Chantier 201700054",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STARTTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "ENDTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "COUNTER",
+			"FieldText": "",
+			"FieldValue": "000000016632",
+			"FieldValueText": "000000016632",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "REASON",
+			"FieldText": "",
+			"FieldValue": "",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STATUS",
+			"FieldText": "",
+			"FieldValue": "DONE",
+			"FieldValueText": "已批准",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "WORKDATE",
+			"FieldText": "",
+			"FieldValue": "20170929",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "AWART",
+			"FieldText": "出勤/缺勤类型",
+			"FieldValue": "0800",
+			"FieldValueText": "出勤时数",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "TIME",
+			"FieldText": "",
+			"FieldValue": "4.0",
+			"FieldValueText": "小时",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "NOTES",
+			"FieldText": "",
+			"FieldValue": "005",
+			"FieldValueText": "Test",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STARTTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "ENDTIME",
+			"FieldText": "",
+			"FieldValue": "000000",
+			"FieldValueText": "000000",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "COUNTER",
+			"FieldText": "",
+			"FieldValue": "000000016633",
+			"FieldValueText": "000000016633",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "REASON",
+			"FieldText": "",
+			"FieldValue": "",
+			"FieldValueText": "",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}, {
+			"__metadata": {
+				"id": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"uri": "https://www.sapfioritrial.com/sap/opu/odata/sap/HCM_TIMESHEET_MAN_SRV/TimeDataList(Pernr='00100226',RecordNumber='1%20')",
+				"type": "HCM_TIMESHEET_MAN_SRV.TimeData"
+			},
+			"Pernr": "00100226",
+			"RecordNumber": "1 ",
+			"FieldName": "STATUS",
+			"FieldText": "",
+			"FieldValue": "DONE",
+			"FieldValueText": "已批准",
+			"Level": 0,
+			"StartDate": "",
+			"EndDate": ""
+		}]
+	}
+}
