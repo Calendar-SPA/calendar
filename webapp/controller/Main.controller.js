@@ -146,7 +146,7 @@ sap.ui.define([
 			}
 			
 			if (this.bCopyMode) {
-				oCopyButton.setEnabled(true);
+				oCopyButton.setEnabled(false);
 			} else if (aSelectedDates.length) {
 				for (var l = aSpecailDates.length; i < l; i++) {
 					var oSpecailStartDate = aSpecailDates[i].getStartDate();
@@ -187,14 +187,16 @@ sap.ui.define([
 		},
 
 		onCopyPress: function() {
+			var oCopyButton = this.byId("idCopyButton");
 			sap.m.MessageToast.show("Copied");
 			this.bCopyMode = true;
 			this.aCopiedDate = this.byId("calendar").getSelectedDates();
 			this.byId("calendar").removeAllSelectedDates();
+			oCopyButton.setEnabled(false);
 			//this.byId("calendar").setSingleSelection(false);
 		},
 
-		onSubmitPress: function() {
+		onSubmitPress: function(){
 			var oProjectSelect = this.byId("idProjectSelect");
 			var oHoursInput = this.byId("idHoursInput");
 			var oCalendar = this.byId("calendar");
