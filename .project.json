@@ -7,7 +7,7 @@
     "targetFolder": "dist",
     "sourceFolder": "webapp",
     "buildRequired": true,
-    "lastBuildDateTime": "Wed, 20 Sep 2017 08:20:02 GMT"
+    "lastBuildDateTime": "Wed, 20 Sep 2017 08:48:26 GMT"
   },
   "generation": [
     {
@@ -43,6 +43,6 @@
   "hcpdeploy": {
     "account": "i016393trial",
     "name": "agluidemo",
-    "lastVersionWeTriedToDeploy": "1.0.2"
+    "lastVersionWeTriedToDeploy": "1.0.4"
   }
 }
