@@ -244,6 +244,7 @@ sap.ui.define([
 					//calculate hours remains
 					var oUpdatedProjectHours = {};
 					var oRecordedDates = {};
+					var updatedHours;
 					for(var k = 0; k < days + 1; k++){
 						tarDate.setDate(oSelectedRangeStart.getDate() + k);
 						if(nSourceDays > 0){
@@ -256,8 +257,13 @@ sap.ui.define([
 						sProjectItemPath = oContext.getPath();
 						var nProjectIndex = parseInt(sProjectItemPath.split("/")[2], 10);
 						oProjectItemObject = oContext.getObject();
-						nProjectHours = oProjectItemObject.Hours;
-						var updatedHours = nProjectHours - nSourceHours;
+						
+						if(oUpdatedProjectHours[nProjectIndex]){
+							nProjectHours = oUpdatedProjectHours[nProjectIndex];
+						}else{
+							nProjectHours = oProjectItemObject.Hours;
+						}
+						updatedHours = nProjectHours - nSourceHours;
 						if(updatedHours < 0){
 							bValidHours = false;
 							break;
