@@ -13,23 +13,23 @@ sap.ui.define([
 			this.aProjectData = [{
 				"ProjectId": "001",
 				"Name": "CXT - OMM",
-				"Hours": 20
+				"Hours": 240
 			}, {
 				"ProjectId": "002",
 				"Name": "CXT - SSMR",
-				"Hours": 40
+				"Hours": 315
 			}, {
 				"ProjectId": "003",
 				"Name": "WAME",
-				"Hours": 50
+				"Hours": 600
 			}, {
 				"ProjectId": "004",
 				"Name": "POC",
-				"Hours": 35
+				"Hours": 187.5
 			}, {
 				"ProjectId": "005",
 				"Name": "BEES",
-				"Hours": 10
+				"Hours": 157.5
 			}];
 			
 			var oEntitiesModel = new sap.ui.model.json.JSONModel(jQuery.sap.getModulePath("AGLCalendar") + "/model/entryList.json");

@@ -3,6 +3,9 @@
 	<App>
 		<pages>
 			<Page title="{i18n>title}">
+				<headerContent>
+					<Image src="/img/agl.jpg" height="35px" width="42px"/>
+				</headerContent> 
 				<content>
 					<VBox>
 						<form:SimpleForm editable="true" layout="ResponsiveGridLayout">
@@ -57,7 +60,7 @@
 						<Button id="idCopyButton" enabled="false" text="Copy" type="Emphasized" press="onCopyPress"/>
 						<ToolbarSpacer/>
 						<Button id="idSubmitButton" text="Submit" press="onSubmitPress" type="Accept"/>
-						<Button text="Cancel"/>
+						<Button text="Cancel" press="onCancelPress"/>
 					</Toolbar>
 				</footer>
 			</Page>
