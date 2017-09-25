@@ -3,9 +3,16 @@
 	<App>
 		<pages>
 			<Page title="{i18n>title}">
-				<headerContent>
-					<Image src="/img/agl.jpg" height="35px" width="42px"/>
-				</headerContent> 
+				<customHeader>
+					<Bar>
+						<contentLeft>
+							<Image src="https://www.agl.com.au/-/media/Project/Primary/Logos/AGL_Logo_primary.png" class="logo" height="35px" width="42px"/>
+						</contentLeft>
+						<contentMiddle>
+							<Title text="{i18n>title}"></Title>
+						</contentMiddle>
+					</Bar>
+				</customHeader>
 				<content>
 					<VBox>
 						<form:SimpleForm editable="true" layout="ResponsiveGridLayout">
@@ -28,7 +35,7 @@
 								<!--		<l:GridData span="XL8 L8 M12 S12"/>-->
 								<!--	</layoutData>-->
 								<!--</ComboBox>-->
-								<Label text="Hours completed">
+								<Label text="Hours worked per day">
 									<layoutData>
 										<l:GridData span="XL4 L4 M12 S12"/>
 									</layoutData>
