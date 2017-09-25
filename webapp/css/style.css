@@ -1,8 +1,7 @@
 /* Enter your custom styles here */
 .logo{
-	width:42px;
-	height:35px;
-	padding:2px 0 0 0;
+	height:33px;
+	padding:1px 0 0 0;
 }
 
 .sapUiCalItemSelBetween, .sapUiCalItemSelBetween.sapUiCalItemOtherMonth{

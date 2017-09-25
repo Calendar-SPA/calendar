@@ -15,17 +15,17 @@
 				</customHeader>
 				<content>
 					<VBox>
-						<form:SimpleForm editable="true" layout="ResponsiveGridLayout">
+						<form:SimpleForm editable="true" layout="ResponsiveGridLayout" emptySpanL="2" emptySpanM="2">
 							<form:content>
 								<Label text="Select your project">
 									<layoutData>
-										<l:GridData span="XL4 L4 M12 S12"/>
+										<l:GridData span="XL4 L4 M4 S12"/>
 									</layoutData>
 								</Label>
 								<Select id="idProjectSelect" change="onProjectChange" selectedKey="{DropdownModel>/selectedProjectId}" items="{ path: 'DropdownModel>/ProjectCollection' }">
 									<core:Item key="{DropdownModel>ProjectId}" text="{DropdownModel>Name}"/>
 									<layoutData>
-										<l:GridData span="XL8 L8 M12 S12"/>
+										<l:GridData span="XL8 L8 M8 S12"/>
 									</layoutData>
 								</Select>
 								<!--<ComboBox id="idProjectSelect" placeholder="Development Work" selectedKey="{DropdownModel>/selectedProjectId}"-->
@@ -37,12 +37,12 @@
 								<!--</ComboBox>-->
 								<Label text="Hours worked per day">
 									<layoutData>
-										<l:GridData span="XL4 L4 M12 S12"/>
+										<l:GridData span="XL4 L4 M4 S12"/>
 									</layoutData>
 								</Label>
 								<Input id="idHoursInput" value="7.5">
 									<layoutData>
-										<l:GridData span="XL8 L8 M12 S12"/>
+										<l:GridData span="XL8 L8 M8 S12"/>
 									</layoutData>
 								</Input>
 								<Label text="Hours remaining">
@@ -53,7 +53,7 @@
 								<Text id="idProjectHoursRemain"
 									text="{ parts:['DropdownModel>/ProjectCollection','DropdownModel>/selectedProjectId'],formatter:'.hoursRemainsFormatter' }">
 									<layoutData>
-										<l:GridData span="XL8 L8 M4 S4"/>
+										<l:GridData span="XL8 L8 M8 S8"/>
 									</layoutData>
 								</Text>
 							</form:content>
