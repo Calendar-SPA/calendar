@@ -6,7 +6,7 @@
 				<customHeader>
 					<Bar>
 						<contentLeft>
-							<Image src="https://www.agl.com.au/-/media/Project/Primary/Logos/AGL_Logo_primary.png" class="logo" height="35px" width="42px"/>
+							<Image src="https://www.agl.com.au/-/media/Project/Primary/Logos/AGL_Logo_primary.png" class="logo"/>
 						</contentLeft>
 						<contentMiddle>
 							<Title text="{i18n>title}"></Title>
